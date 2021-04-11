@@ -1,4 +1,5 @@
 1. For training model, simply execute the following command
+   python ./generate_adj_embedding.py # Generate the adjacency matrix for GCN
    python main.py --action=train
 2. For evaluation
    (1) Generate test result
