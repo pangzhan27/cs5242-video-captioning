@@ -3,5 +3,5 @@
 2. For evaluation
    (1) Generate test result
        python main.py --action=test
-   (2) output triplet based on Bayes Rule
+   (2) Output triplet based on Bayes Rule
        python post_processing.py
