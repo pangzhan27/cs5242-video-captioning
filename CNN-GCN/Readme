@@ -1,3 +1,7 @@
 1. For training model, simply execute the following command
-python main.py --action=train
-2. For evaluation, 
+   python main.py --action=train
+2. For evaluation
+   (1) Generate test result
+       python main.py --action=test
+   (2) output triplet based on Bayes Rule
+       python post_processing.py
