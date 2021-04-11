@@ -1,0 +1,15 @@
+To generate a more robust model, models with different order of output are trained, and model ensemble is further done on these generated models.
+For instance, the original output should be in the order of (object 1, relation, object 2). By changing the order of entries in the triple, we can get new labels (object 1, object
+2, relation), and another model can be trained on this new labels.
+
+The 3 folders in this path constains models trained with different order of output
+
+1. For training model, simply execute the following command
+   python main.py --action=train
+2. For evaluation
+   (1) Generate test result
+       python main.py --action=test
+   (2) Output triplet
+       python post_processing.py
+3. For model ensemble
+   The ensemble code is in obj1_relation_obj2/ensemble.py, where each test results are required to be generated first before applying model ensemble
